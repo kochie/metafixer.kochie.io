@@ -13,6 +13,7 @@ import {
   faTableLayout,
 } from "@fortawesome/pro-duotone-svg-icons";
 import { faApple } from "@fortawesome/free-brands-svg-icons";
+import * as Fathom from "fathom-client";
 
 const features = [
   { icon: faLayerGroup, text: "Batch processing of Facebook exported photos" },
@@ -45,7 +46,7 @@ function App() {
             <Button variant="outline" className="mr-2">
               <a href="/#key-features">Features</a>
             </Button>
-            <Button>
+            <Button onClick={() => Fathom.trackEvent('download')}>
               <a href="/MetaFixer.zip" download="MetaFixer.zip">
                 Download
               </a>

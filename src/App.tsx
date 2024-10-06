@@ -46,8 +46,8 @@ function App() {
             <Button variant="outline" className="mr-2" onClick={() => Fathom.trackEvent("features")}>
               <a href="/#key-features">Features</a>
             </Button>
-            <Button onClick={() => Fathom.trackEvent('download')}>
-              <a href="/MetaFixer.zip" download="MetaFixer.zip">
+            <Button onClick={() => Fathom.trackEvent('mac store')}>
+              <a href="https://apps.apple.com/us/app/metafixer/id6727004716">
                 Download
               </a>
             </Button>
@@ -68,7 +68,7 @@ function App() {
                 correct date and location when imported into photo apps.
               </p>
               <div className="mt-6">
-                <a href="" className="" onClick={() => Fathom.trackEvent("mac store")}>
+                <a href="https://apps.apple.com/us/app/metafixer/id6727004716" className="" onClick={() => Fathom.trackEvent("mac store")}>
                   <img src={Badge} />
                 </a>
               </div>
